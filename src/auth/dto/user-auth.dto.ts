@@ -10,7 +10,7 @@ export class UserAuth {
     @IsString()
     @MinLength(8)
     @MaxLength(15)
-    // @Matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$/,
-    //  { message: 'Password is weak'},)
+    @Matches(/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/,
+     { message: 'Password is weak'},)
     password: string;
 }
