@@ -1,0 +1,74 @@
+.todo-header {
+    background-color: #f8f9fa; /* Background color for the header */
+    padding: 20px; /* Add padding to the header */
+    text-align: center; /* Center align the content */
+  }
+  
+  .todo-title {
+    color: #007bff; /* Text color for the title */
+    font-size: 32px; /* Adjust font size */
+    margin: 0; /* Remove default margin */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Increase letter spacing for emphasis */
+    font-weight: bold; /* Make the title bold */
+  }
+  
+  
+  .todo-list {
+    margin-top: 20px;
+  }
+  
+  .todo-item {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .todo-content {
+    flex: 1;
+  }
+  
+  .todo-content h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333333;
+  }
+  
+  .todo-content p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666666;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-btn:hover{
+    background-color: grey;
+  }
+  .delete-btn:hover{
+    background-color: red;
+  }
+  
+  .edit-btn {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: #ffffff;
+  }
+  
+  
