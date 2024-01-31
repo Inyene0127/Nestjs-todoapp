@@ -1,32 +1,74 @@
+body{
+    margin: 0;
+}
 .todo-header {
-    background-color: #f8f9fa; /* Background color for the header */
-    padding: 20px; /* Add padding to the header */
-    text-align: center; /* Center align the content */
+    background-color: grey;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    
   }
   
   .todo-title {
-    color: #007bff; /* Text color for the title */
-    font-size: 32px; /* Adjust font size */
-    margin: 0; /* Remove default margin */
-    text-transform: uppercase; /* Convert text to uppercase */
-    letter-spacing: 2px; /* Increase letter spacing for emphasis */
-    font-weight: bold; /* Make the title bold */
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .add {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .add form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .add input[type="text"] {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add button[type="button"] {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #45a049;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add button[type="button"]:hover {
+    background-color: #39803d;
   }
   
   
   .todo-list {
     margin-top: 20px;
+    text-align: center;
   }
   
+  .todo-list h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  
   .todo-item {
-    background-color: #ffffff;
-    border: 1px solid #ced4da;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 10px;
+    margin-left: 30em;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 30em;
   }
   
   .todo-content {
@@ -35,19 +77,32 @@
   
   .todo-content h2 {
     margin: 0;
-    font-size: 18px;
-    color: #333333;
+    font-size: 20px;
+    color: #333;
   }
   
   .todo-content p {
     margin: 5px 0;
-    font-size: 14px;
-    color: #666666;
+    font-size: 16px;
+    color: #666;
   }
   
-  .edit-btn,
-  .delete-btn {
+  .edit-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .edit-form input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+
+  .edit-btn, .delete-btn {
     padding: 8px 15px;
+    margin: 5px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -55,20 +110,21 @@
   }
   
   .edit-btn:hover{
-    background-color: grey;
+    background-color: #1c8a00;
   }
-  .delete-btn:hover{
-    background-color: red;
+  
+  .delete-btn:hover {
+    background-color: #e01717;
+    
   }
   
   .edit-btn {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #45a049;
+    color: #fff;
   }
   
   .delete-btn {
-    background-color: #dc3545;
-    color: #ffffff;
+    background-color: #f44336;
+    color: #fff;
   }
-  
   

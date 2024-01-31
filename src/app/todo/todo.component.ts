@@ -10,6 +10,9 @@ export class TodoComponent implements OnInit {
   todos: any[] = [];
   title: string = '';
   description: string = '';
+  showModal = false;
+  // editedTitle: string ='';
+  // editedDescription: string ='';
 
   constructor(private todoService: TodoService) { }
 

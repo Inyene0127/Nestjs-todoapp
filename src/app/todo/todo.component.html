@@ -2,23 +2,24 @@
   <h1 class="todo-title">Todo List</h1>
 </div>
 
-<div>
+<div class="add">
   <form>
     <input type="text" placeholder="Enter a new todo" [(ngModel)]="title" name="title">
     <input type="text" placeholder="Enter a description" [(ngModel)]="description" name="description">
-    <button type="button" (click)="addTodo()">Add Todo</button>
+    <button type="button" (click)="addTodo()" style="width: 10em;">Add Todo</button>
   </form>
 </div>
 
 <div class="todo-list">
+  <h1>Todo Items</h1>
   <div *ngFor="let todo of todos; let i = index" class="todo-item">
     <div *ngIf="!todo.editMode" class="todo-content">
       <h2>{{ todo.title }}</h2>
       <p>{{ todo.description }}</p>
     </div>
     <div *ngIf="todo.editMode" class="edit-form">
-      <input type="text" [(ngModel)]="todo.editedTitle">
-      <input type="text" [(ngModel)]="todo.editedDescription">
+      <input type="text" [(ngModel)]="todo.editedTitle" name="editedTitle">
+      <input type="text" [(ngModel)]="todo.editedDescription" name="editedDescription">
     </div>
     <div>
       <button type="button" class="edit-btn" (click)="toggleEditMode(todo)">
